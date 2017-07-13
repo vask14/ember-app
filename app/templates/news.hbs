@@ -1,0 +1,13 @@
+{{#each model as |news|}}
+<article>
+<div class = "info-block">
+<img src = "http://lorempixel.com/220/160/business/?767"/>
+<div class="text-block">
+<h2>{{{news.title.rendered}}}</h2>
+<div>{{{news.content.rendered}}}</div>
+</div>
+<span class="date">{{{news.date}}}</span>
+<span class="link"><a href = "#">Read further</a></span>
+</div>
+</article>
+{{/each}}
